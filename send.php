@@ -8,10 +8,10 @@ if (isset($_POST['name']) && isset($_POST['family']) && isset($_POST['age']) && 
   $com = $_POST['com'];
 
 
-  $servername = "localhost"; 
-  $username = "root"; // Логин БД
-  $password = "root"; // Пароль БД
-  $database = 'applications'; // Имя БД
+  $servername = "eu-cdbr-west-01.cleardb.com"; 
+  $username = "bd30da98e8f102"; // Логин БД
+  $password = "ad0927c6"; // Пароль БД
+  $database = 'heroku_83b71ec5bff1667'; // Имя БД
   $db_table = "users"; // Имя Таблицы БД
 
   $conn = mysqli_connect($servername, $username, $password, $database);
