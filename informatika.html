@@ -86,41 +86,28 @@
         		</p>
         		<p>Для того что бы записаться, заполните форму ниже.</p>
            </p>
-<form>
+<form method="POST" action="send.php">
  <div class="mb-3">
   <label for="formGroupExampleInput" class="form-label">Имя:</label>
-  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ваше имя">
+  <input type="text" class="form-control" name="name" placeholder="Ваше имя">
 </div>
 <div class="mb-3">
   <label for="formGroupExampleInput2" class="form-label">Фамилия:</label>
-  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Фамилия">
+  <input type="text" class="form-control" name="family" placeholder="Фамилия">
 </div>
 <div class="mb-3">
 	<label for="inputState" class="form-label">Возраст:</label>
-    <select id="inputState" class="form-select">
-      <option selected>7</option>
-      <option>8</option>
-      <option>9</option>
-      <option>10</option>
-      <option>11</option>
-      <option>12</option>
-      <option>13</option>
-      <option>14</option>
-      <option>15</option>
-      <option>16</option>
-      <option>17</option>
-      <option>18</option>
-    </select>
+  <input type="text" class="form-control" name="age" placeholder="Возраст">
 </div>
 
 <div class="mb-3">
   <label for="formGroupExampleInput2" class="form-label">Номер телефона:</label>
-  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Номер">
+  <input type="text" class="form-control" name="phone" placeholder="Номер">
 </div>
 
 <div class="mb-3">
   <label for="formGroupExampleInput2" class="form-label">Комментарий:</label>
-  <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Коментарий">
+  <input type="text" class="form-control" name="com" placeholder="Коментарий">
 </div>
 
 <div class="mb-3">
