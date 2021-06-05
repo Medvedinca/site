@@ -22,6 +22,8 @@ if (isset($_POST['name']) && isset($_POST['family']) && isset($_POST['age']) && 
  
 	echo "Connected successfully";
 
+  $conn->set_charset("utf8");
+
 	$sql = "INSERT INTO users (name, family, age, phone, com) VALUES ('$name', '$family', '$age', '$phone', '$com')";
 
 	if (mysqli_query($conn, $sql)) {
