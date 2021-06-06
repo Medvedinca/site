@@ -1,0 +1,6 @@
+CLEARDB_DATABASE_URL: mysql://bd30da98e8f102:ad0927c6@eu-cdbr-west-01.cleardb.com/heroku_83b71ec5bff1667?reconnect=true
+
+bd30da98e8f102
+ad0927c6
+eu-cdbr-west-01.cleardb.com
+heroku_83b71ec5bff1667
