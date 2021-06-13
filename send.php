@@ -25,7 +25,7 @@ if (isset($_POST['name']) && isset($_POST['family']) && isset($_POST['age']) && 
 
   $conn->set_charset("utf8");
 
-	$sql = "INSERT INTO users (name, family, age, direction, phone, com) VALUES ('$name', '$family', '$age', '$direction' '$phone', '$com')";
+	$sql = "INSERT INTO users (name, family, age, direction, phone, com) VALUES ('$name', '$family', '$age', '$direction', '$phone', '$com')";
 
 	if (mysqli_query($conn, $sql)) {
       echo "New record created successfully";
@@ -36,9 +36,9 @@ if (isset($_POST['name']) && isset($_POST['family']) && isset($_POST['age']) && 
 
 	mysqli_close($conn);
 
-	echo "<script>
-             alert('Ваша заявка успешно зарегестрирована!'); 
-             window.history.go(-1);
-    </script>";
+	//echo "<script>
+    //         alert('Ваша заявка успешно зарегестрирована!'); 
+    //         window.history.go(-1);
+    //</script>";
 }
 ?>
