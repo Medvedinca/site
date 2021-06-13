@@ -36,9 +36,9 @@ if (isset($_POST['name']) && isset($_POST['family']) && isset($_POST['age']) && 
 
 	mysqli_close($conn);
 
-	//echo "<script>
-    //         alert('Ваша заявка успешно зарегестрирована!'); 
-    //         window.history.go(-1);
-    //</script>";
+	echo "<script>
+             alert('Ваша заявка успешно зарегестрирована!'); 
+             window.history.go(-1);
+    </script>";
 }
 ?>
