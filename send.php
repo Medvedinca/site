@@ -1,9 +1,10 @@
 <?php
-if (isset($_POST['name']) && isset($_POST['family']) && isset($_POST['age']) && isset($_POST['phone'])){
+if (isset($_POST['name']) && isset($_POST['family']) && isset($_POST['age']) && isset($_POST['phone']) && isset($_POST['direction'])){
 
   $name = $_POST['name'];
   $family = $_POST['family'];
   $age = $_POST['age'];
+  $direction = $_POST['direction'];
   $phone = $_POST['phone'];
   $com = $_POST['com'];
 
@@ -24,7 +25,7 @@ if (isset($_POST['name']) && isset($_POST['family']) && isset($_POST['age']) && 
 
   $conn->set_charset("utf8");
 
-	$sql = "INSERT INTO users (name, family, age, phone, com) VALUES ('$name', '$family', '$age', '$phone', '$com')";
+	$sql = "INSERT INTO users (name, family, age, direction, phone, com) VALUES ('$name', '$family', '$age', '$direction' '$phone', '$com')";
 
 	if (mysqli_query($conn, $sql)) {
       echo "New record created successfully";
@@ -38,6 +39,6 @@ if (isset($_POST['name']) && isset($_POST['family']) && isset($_POST['age']) && 
 	echo "<script>
              alert('Ваша заявка успешно зарегестрирована!'); 
              window.history.go(-1);
-     </script>";
+    </script>";
 }
 ?>
